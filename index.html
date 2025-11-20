@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSG Business Solutions – USA Job Openings</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VSG Business Solutions Inc - Careers</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f7f7f7;
-        }
+    /* Header */
+    header {
+        background: #cdeec9;
+        padding: 15px 25px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 2px solid #b8dbb2;
+    }
 
-        header {
-            background: #002b5b;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
+    header img {
+        height: 55px;
+    }
 
-        h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #2f4f2f;
+        font-weight: 600;
+    }
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 25px;
-            background: white;
-            margin-top: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
+    /* Job Widget Container */
+    .job-section {
+        padding: 30px;
+        max-width: 1100px;
+        margin: auto;
+    }
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-            background: #002b5b;
-            color: white;
-        }
-    </style>
+    /* Footer */
+    footer {
+        background: #cdeec9;
+        padding: 18px 30px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #b8dbb2;
+        color: #2f4f2f;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        margin: 5px 0;
+    }
+</style>
 </head>
-
 <body>
 
+<!-- Header -->
 <header>
-    <h1>VSG Business Solutions – USA Job Openings</h1>
-    <p>Explore current openings powered by CEIPAL ATS</p>
+    <img src="/mnt/data/VSG Inc - removebg.png" alt="VSG Logo" />
+    <h1>VSG Business Solutions Inc - Careers</h1>
 </header>
 
-<div class="container">
-    <!-- CEIPAL ATS Widget -->
-    <script type="text/javascript" 
-        src="https://jobsapi.ceipal.com/APISource/widget.js" 
-        data-ceipal-api-key="dzlaNFJNTFJUZWs4RjArQzlzOXZQUT09" 
-        data-ceipal-career-portal-id="Z3RkUkt2OXZJVld2MjFpOVRSTXoxZz09">
-    </script>
-
+<!-- Job Section -->
+<div class="job-section">
+    <script type="text/javascript" src="https://jobsapi.ceipal.com/APISource/widget.js" data-ceipal-api-key="dzlaNFJNTFJUZWs4RjArQzlzOXZQUT09" data-ceipal-career-portal-id="Z3RkUkt2OXZJVld2MjFpOVRSTXoxZz09"></script>
     <div id="example-widget-container"></div>
 </div>
 
+<!-- Footer -->
 <footer>
-    © 2025 VSG Business Solutions Inc. | Careers Portal
+    <div><strong>Location:</strong><br>3240 E State St Ext, Ste 203, Hamilton NJ, 08619</div>
+    <div><strong>Website:</strong><br>www.vsgbusinesssolutions.com</div>
 </footer>
 
 </body>
