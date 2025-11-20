@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VSG Business Solutions Inc - Job Openings</title>
-  
-  <style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VSG Business Solutions Inc - Careers</title>
+<style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
     }
 
+    /* Header */
     header {
-      text-align: center;
-      padding: 20px 0;
-      background: white;
+        background: #cdeec9;
+        padding: 15px 25px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 2px solid #b8dbb2;
     }
 
-    .logo {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
+    header img {
+        height: 55px;
     }
 
-    h1 {
-      margin: 10px 0 5px 0;
-      font-size: 28px;
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #2f4f2f;
+        font-weight: 600;
     }
 
-    h2 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: bold;
+    /* Job Widget Container */
+    .job-section {
+        padding: 30px;
+        max-width: 1100px;
+        margin: auto;
     }
 
+    /* Footer */
     footer {
-      text-align: center;
-      margin-top: auto;
-      padding: 15px 0;
-      background: white;
-      font-size: 14px;
+        background: #cdeec9;
+        padding: 18px 30px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #b8dbb2;
+        color: #2f4f2f;
+        font-size: 15px;
+        flex-wrap: wrap;
     }
-  </style>
-</head>
 
+    footer div {
+        margin: 5px 0;
+    }
+</style>
+</head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="logo.png" alt="VSG Logo" class="logo" />
-    <h1>VSG Business Solutions Inc</h1>
-    <h2>Job Openings</h2>
-  </header>
+<!-- Header -->
+<header style="background:#1f5d24;color:#ffffff;padding:30px 0;text-align:center;border-bottom-left-radius:25px;border-bottom-right-radius:25px;display:flex;flex-direction:column;align-items:center;">
 
-  <!-- MAIN CONTENT -->
-  <main style="padding: 20px; text-align: center;">
-    <p>Welcome to our careers page. Job listings will appear here.</p>
-  </main>
+    <div style="background:#ffffff;padding:18px;border-radius:50%;display:flex;justify-content:center;align-items:center;">
+        <img src="logo.png" alt="VSG Logo" style="height:85px;width:auto;" />
+    </div>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 VSG Business Solutions Inc. All rights reserved.
-  </footer>
+    <!-- Centered Header Text Block -->
+    <div style="display:flex;flex-direction:column;align-items:center;margin-top:10px;width:100%;">
+        <h1 style="margin:10px 0 0 0;font-size:30px;font-weight:700;color:#ffffff;text-align:center;">
+            VSG Business Solutions Inc
+        </h1>
+
+        <h2 style="margin:5px 0 0 0;font-size:24px;font-weight:700;color:#ffffff;text-align:center;">
+            Job Openings
+        </h2>
+    </div>
+
+</header>
+
+<!-- Job Section -->
+<div class="job-section" style="border:1px solid #ddd;border-radius:20px;padding:30px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+    <script type="text/javascript" src="https://jobsapi.ceipal.com/APISource/widget.js" data-ceipal-api-key="dzlaNFJNTFJUZWs4RjArQzlzOXZQUT09" data-ceipal-career-portal-id="Z3RkUkt2OXZJVld2MjFpOVRSTXoxZz09"></script>
+    <div id="example-widget-container"></div>
+</div>
+
+<!-- Footer -->
+<footer style="background:#1f5d24;color:#ffffff;padding:30px 0;border-top-left-radius:25px;border-top-right-radius:25px;text-align:center;">
+    <div style="display:flex;justify-content:center;align-items:center;gap:80px;text-align:center;width:100%;">
+        <div style="text-align:center;"><strong>Location:</strong><br>3240 E State St Ext, Ste 203, Hamilton NJ, 08619</div>
+        <div style="height:45px;border-left:2px solid #ffffff;"></div>
+        <div style="text-align:center;"><strong>Website:</strong><br>www.vsgbusinesssolutions.com</div>
+    </div>
+</footer>
 
 </body>
 </html>
